@@ -1,14 +1,13 @@
-import java.io.*;
-
-public class Main{
-    public static void main (String[] args) throws IOException{
-        java.io.BufferedReader br = new java.io.BufferedReader(new InputStreamReader(System.in)) ;
+import java.util.Scanner;
+public class Assignment1Scanner {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter Year: ");
-        int year = Integer.parseInt(br.readLine());
+        int year = sc.nextInt();
 
         if (year % 400 == 0){
-            System.out.println(year + " is a leap year.");
+            System.out.print(year + " is a leap year.");
         }else if (year % 100 == 0){
             System.out.println(year + " is not a leap year.");
         }else if (year % 4 == 0){

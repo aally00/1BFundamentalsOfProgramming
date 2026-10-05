@@ -1,5 +1,5 @@
 import javax.swing.JOptionPane;
-public class Main {
+public class Assignment1JOptionPane {
     public static void main (String[] args){
 
         int year = Integer.parseInt(JOptionPane.showInputDialog("Enter Year:"));
